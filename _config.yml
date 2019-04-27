@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "TSZ"
 title_separator          : "-"
-name                     : "Tatyana 'tatasz' Zabanova"
+name                     : "tatasz"
 description              : "Fractals and statistics"
 url                      : https://tatasz.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
