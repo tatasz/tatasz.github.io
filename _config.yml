@@ -24,7 +24,7 @@ url                      : https://tatasz.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tatasz/tatasz.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : /assets/avatar.png"
+logo                     : /assets/avatar.png
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -106,8 +106,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tatyana 'tatasz' Zabanova"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "TataSZ"
+  avatar           : /assets/avatar.png
   bio              : "Statistician and digital artist"
   location         : "Internet"
   email            :
