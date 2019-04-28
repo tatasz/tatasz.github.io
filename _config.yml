@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "TSZ"
 title_separator          : "-"
 name                     : "tatasz"
-description              : "Fractals and statistics"
+description              : "Fractals and Statistics"
 url                      : https://tatasz.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : tatasz/tatasz.github.io
