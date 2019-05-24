@@ -122,7 +122,6 @@ Larger than Life is a generalization of Game of Life, described by [Kellie Miche
 </figure> 
 
 Then, the rule is changed to:
-- If a cell is dead, it will become alive if `s`, the number of living cells in the neighborhood, is in the closed interval [b<sub>1</sub>, b2].
-- If a cell is alive, it will remain alive only if `s` is in the closed interval [a1, a2].
+- If a cell is dead, it will become alive if `s`, the number of living cells in the neighborhood, is in the closed interval $$[b_1, b_2]$$.
+- If a cell is alive, it will remain alive only if `s` is in the closed interval $$[a_1, a_2]$$.
 - Else, the cell either remains dead or dies.
-
