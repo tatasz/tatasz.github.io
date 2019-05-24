@@ -293,3 +293,7 @@ defaults:
       comments: true
       share: true
       related: true
+      
+tag_archive:
+  type: liquid
+  path: /tags/
