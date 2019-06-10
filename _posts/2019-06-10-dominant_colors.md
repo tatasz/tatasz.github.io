@@ -49,7 +49,7 @@ If you try processing a bigger image, you will notice that the code becomes slow
 1. Resize the image once you load it (you can use `pillow` for that)
 2. Take a subsample of your pixels.
 
-Back to business, we now got a list of 5 dominant colors for our image. But are those colors actually good? Take a look at the picture below: an artwork with the respective dominant colors obtained as described above.
+Back to business, we now got a list of 5 dominant colors for our image. But are those colors actually good? Take a look at the picture below: an artwork ([Book of Moths](https://www.deviantart.com/fardareismai/art/Book-Of-Moths-372615422) by FarDareisMai) with the respective dominant colors obtained as described above.
 
 <figure style="width: 550px" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dominant_colors_palette_test_3_15_Book-Of-Moths-372615422.png" alt="">
@@ -160,11 +160,11 @@ The `AgglomerativeClustering` method has a number of parameters, but here I will
 
 "Ward" linkage leads basically to what we already had, while the colors obtained with "single" linkage are way too dark. "Cosine" affinity doesn't work well either, so we are left with eight candidates. My personal favourites are the clusters produced with "l1" and "manhattan" affinities (which are sort of the same for our purpose), and "complete" linkage: the other ones either feature a light blue that doesn't represent the image for me, or a bright dark violet, which I also feel is not accurate.
 
-To make sure, we can look at another image.
+To make sure, we can look at another image ([Disc](https://www.deviantart.com/tatasz/art/Disc-676213672), one of my own).
 
 <figure style="width: 550px" class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dominant_colors_palette_test_3_Disc-676213672.png" alt="">
-  <figcaption>{{ [Disc](https://www.deviantart.com/tatasz/art/Disc-676213672) by me =) }}</figcaption>
+  <figcaption>{{ [Disc](https://www.deviantart.com/tatasz/art/Disc-676213672) by me }}</figcaption>
 </figure> 
 
 <figure style="width: 550px" class="align-center">
