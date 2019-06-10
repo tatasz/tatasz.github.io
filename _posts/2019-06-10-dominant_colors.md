@@ -84,7 +84,8 @@ def rgb_to_xyz(p):
         [0.01930000, 0.11920000, 0.95050000]])
     illuminant_RGB = np.array([0.31270, 0.32900])
     illuminant_XYZ = np.array([0.34570, 0.35850])
-    return cl.RGB_to_XYZ(p / 255, illuminant_RGB, illuminant_XYZ, RGB_to_XYZ_matrix, 'Bradford')
+    return cl.RGB_to_XYZ(p / 255, illuminant_RGB, illuminant_XYZ, 
+							RGB_to_XYZ_matrix, 'Bradford')
 
 #converts from rgb to lab
 def rgb_to_lab(p):
@@ -99,7 +100,8 @@ def xyz_to_rgb(p):
         [0.05571012, -0.20402105, 1.05699594]])
     illuminant_RGB = np.array([0.31270, 0.32900])
     illuminant_XYZ = np.array([0.34570, 0.35850])
-    newp = cl.XYZ_to_RGB(p, illuminant_XYZ, illuminant_RGB, XYZ_to_RGB_matrix, 'Bradford')
+    newp = cl.XYZ_to_RGB(p, illuminant_XYZ, illuminant_RGB, 
+							XYZ_to_RGB_matrix, 'Bradford')
     return newp * 255
 
 #converts from lab to rgb
@@ -143,7 +145,8 @@ from sklearn.cluster import AgglomerativeClustering
 pixels_lab = rgb_to_lab(pixels)
 
 #fit clusters
-ag_clusters = AgglomerativeClustering(n_clusters=nclusters, affinity = 'l1', linkage='complete')
+ag_clusters = AgglomerativeClustering(n_clusters=nclusters, 
+					affinity = 'l1', linkage='complete')
 ag_clusters_fit = ag_clusters.fit(rgb_to_lab(pixels))
 #get centroids
 centroids_ag = []
